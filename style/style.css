@@ -1,0 +1,290 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* --------------------------------------------------------- */
+html, body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Quicksand', sans-serif;
+    color: whitesmoke;
+}
+
+body {
+    background: url(../img/tlo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+    min-height: 100%;
+}
+
+@font-face {
+    font-family: 'KGSecondChancesSketch';
+    src: url('../fonts/KGSecondChancesSketch.ttf');
+}
+
+@font-face {
+    font-family: 'KGSecondChancesSolid';
+    src: url('../fonts/KGSecondChancesSolid.ttf');
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'KGSecondChancesSketch';
+}
+/* --------------------------------------------------------- */
+
+/* START CSS */
+
+/*---------HEADER----------*/
+
+header {
+    width: 100%;
+    height: 100vh;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: 'KGSecondChancesSketch';
+}
+
+.glowne {
+    width: 100%;
+}
+
+header h1 {
+    font-size: 7vw;
+}
+
+.pierwsza_litera {
+    color: orangered;
+}
+
+.druga_litera {
+    color: cornflowerblue;
+}
+
+header h2 {
+    font-size: 3.5vw;
+}
+
+#buttoni {
+    display: inline-block;
+    width: auto;
+    font-size: 3rem;
+    color: whitesmoke;
+    margin-top: 20vh;
+    transition-duration:0.5s;
+}
+
+#buttoni:hover {
+    text-decoration: none;
+    color: orange;
+
+}
+
+
+
+/*----KONIEC-----HEADER-------*/
+
+/*------------- MAIN -------------*/
+
+main {
+    height: 60%;
+    margin-top: 20px;
+}
+
+.o_mnie {
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+    font-size: 1.4rem;
+    text-indent: 1%;
+}
+
+
+
+.profilowe {
+    border: solid 5px whitesmoke;
+    border-radius: 5px;
+}
+
+
+.omnie_text {
+    text-align: justify;
+    padding-right: 0.8vw;
+}
+
+.omnie_text ul {
+    list-style-type: disc;
+}
+
+.omnie_text ul li {
+    margin-left: 2.5rem;
+}
+
+.omnie_text a {
+    color: orangered;
+}
+
+.loga img {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+
+
+/*----KONIEC----MAIN--------------*/
+
+/*--------------PROJEKTY--------------*/
+
+.projekty {
+    text-align: center;
+    line-height: 1.5;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 1.4rem;
+}
+
+.projekty p {
+    text-align:justify;
+    text-indent: 3%;
+}
+
+.projekty ul {
+    text-align: left;
+    list-style-type: disc;
+    margin-left: 10%;
+}
+
+.projekty h3 {
+    font-size: 2rem;
+}
+
+.projekty h5 {
+    font-size: 1.8rem;
+}
+
+.projekty img {
+    border: solid 5px whitesmoke;
+    border-radius: 5px;
+}
+
+.projekty img:hover {
+    filter: none;
+}
+
+.portfolio, .pomocnik {
+    margin-bottom: 10px;
+}
+
+/*-------KONIEC---PROJEKTY-----------*/
+
+/*----------FOOTER---------------*/
+
+footer {
+    background-color: black;
+    color: whitesmoke;
+    font-size: 18px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/*-----KONIEC----FOOTER----------*/
+
+/*------RWD------START-------*/
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    html, body {
+        font-size: 80%;
+    }
+
+    .projekty img {
+        max-height: 165px;
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    html, body {
+        font-size: 70%;
+    }
+
+    header h1 {
+        font-size: 9vw;
+    }
+
+    header h2 {
+        font-size: 5.5vw;
+    }
+
+    .profilowe {
+        width: 90%;
+        height: 90%;
+    }
+
+    main, article {
+        color: white;
+    }
+
+    .projekty img {
+        max-height: 165px;
+        max-width: 300px;
+        filter: none;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    html, body {
+        font-size: 60%;
+        background-size: 110vw 110vh;
+    }
+
+}
